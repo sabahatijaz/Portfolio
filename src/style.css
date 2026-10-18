@@ -583,8 +583,56 @@ html {
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
+  opacity: 1 !important;
   border-radius: 10px !important;
+  background: #12081f;
+}
+
+.project-stack {
+  color: #c9b3ff;
+  font-size: 0.92em;
+  margin-bottom: 16px;
+}
+
+.skill-summary {
+  color: white;
+  font-size: 1.05em;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.experience-section {
+  position: relative;
+  color: white;
+  padding-bottom: 80px;
+  background-image: var(--section-background-color);
+}
+
+.exp-list {
+  max-width: 860px;
+  margin: 10px auto 0;
+}
+
+.exp-item {
+  border-left: 2px solid #7500fa;
+  padding: 0 0 8px 22px;
+  margin: 0 0 22px 8px;
+}
+
+.exp-item h3 {
+  font-size: 1.25em;
+  margin-bottom: 4px;
+}
+
+.exp-meta {
+  margin-bottom: 8px;
+}
+
+.exp-item p {
+  margin-bottom: 0;
+  text-align: left;
 }
 
 .blog-img {

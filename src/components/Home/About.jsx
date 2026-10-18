@@ -2,11 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LaptopImg from "../../assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 
@@ -20,46 +16,24 @@ const About = () => {
                   LET ME <span className="yellow"> INTRODUCE </span> MYSELF
                 </h1>
                 <p className="home-about-body">
-                 Hi, my name is <span className="yellow">SABAHAT IJAZ </span>
-                 and I'm from <span className="yellow"> Lahore, Pakistan.</span>
+                 I'm <span className="yellow">Sabahat Ijaz</span>, a senior software engineer in
+                 <span className="yellow"> Lahore, Pakistan</span>.
                 <br />
                 <br />
-                I graduated with a Bachelor's degree in Computer Science in 2020.
-                <br />
-                <br />
-                  As a
-                  <b className="yellow"> Data Scientist </b>,  
-                  I enjoy tackling new challenges and continuously expanding my skillset.
-                  <br />
-                  <br />I am proficient in
-                    <b className="yellow"> Machine Learning, Computer Vision, Natural Language Processing, 
-                    Time Series Forecasting and Analysis </b>
-                    as well as have knowledge in programming languages such as C, C++, Python,
-                  <b className="yellow"> GraphQL, and ReactJS.</b>
+                  I build production <b className="yellow">Python backends and generative AI products</b>.
+                  Right now that is Quillio, an AI legal assistant lawyers use for document review, research, drafting, and intake.
                   <br />
                   <br />
-                  I have a passion for working
-                  with <b className="yellow"> MongoDB,MySQL</b> and
-                  <i>
-                    <b className="yellow">
-                      {" "}
-                      modern Javascript libraries and frameworks
-                    </b>
-                  </i>
-                  &nbsp; like
-                  <i>
-                    <b className="yellow"> React.js</b>
-                  </i>
+                  The work covers multi-provider LLMs, retrieval-augmented generation, multi-agent workflows, and the APIs around them:
+                  <b className="yellow"> FastAPI, PostgreSQL, vector search, and Docker</b>.
                   <br />
                   <br />
-                  I am also interested in building new
-                  <i>
-                    <b className="yellow"> Artificial Intelligence Products, </b>
-                    as well as exploring areas related to
-                    <b className="yellow"> Backend & Front-end development.</b>
-                  </i>
+                  Before Quillio I led generative AI delivery for clients in the United States and Turkey, built the multi-tenant API for
+                  <b className="yellow"> ProptoXchange</b> (tokenized real-world assets), and led
+                  <b className="yellow"> Y-Hat</b>, an automated time-series forecasting product.
                   <br />
-                  
+                  <br />
+                  MS Data Science and BS Computer Science, FAST NUCES Lahore.
                 </p>
               </Col>
               <Col md={4} className="myAvtar">
@@ -84,17 +58,6 @@ const About = () => {
                       aria-label="github"
                     >
                       <AiFillGithub />
-                    </a>
-                  </li>
-                  <li className="social-icons">
-                    <a
-                      href="https://twitter.com/19sajib"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour  home-social-icons"
-                      aria-label="twitter"
-                    >
-                      <AiOutlineTwitter />
                     </a>
                   </li>
                   <li className="social-icons">

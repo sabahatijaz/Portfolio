@@ -1,22 +1,14 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { DiReact } from "react-icons/di";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiGit,
-} from "react-icons/di";
-import {
-  SiMaterialui,
   SiFlask,
   SiFastapi,
-  SiGraphql,
-  SiSolidity,
-  SiRedux,
   SiPython,
   SiMongodb,
-  SiMysql,
-  SiHtml5
+  SiPostgresql,
+  SiRedis,
+  SiDocker,
 } from "react-icons/si";
 
 const Techstack = () => {
@@ -26,31 +18,25 @@ const Techstack = () => {
         <SiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
-      </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col> */}
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <SiFastapi />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedux />
+        <SiFlask />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPostgresql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGraphql />
+        <SiRedis />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFlask />
+        <SiDocker />
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <SiMaterialui />
-      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
-        <SiFastapi />
+        <DiReact />
       </Col>
     </Row>
   );

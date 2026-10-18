@@ -16,6 +16,7 @@ const resumeLink = `https://github.com/sabahatijaz/portfolio/blob/main/sabahat_i
 
 const Resume = () => {
   const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
 
   useEffect(() => {
     
@@ -39,10 +40,19 @@ const Resume = () => {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Document
+            file={pdf}
+            className="d-flex flex-column align-items-center"
+            onLoadSuccess={({ numPages: nextNumPages }) => setNumPages(nextNumPages)}
+          >
+            {Array.from(new Array(numPages), (el, index) => (
+              <Page
+                key={`page_${index + 1}`}
+                pageNumber={index + 1}
+                scale={width > 786 ? 1.4 : 0.6}
+              />
+            ))}
           </Document>
-          
         </Row>
         {/* <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center"></Document>

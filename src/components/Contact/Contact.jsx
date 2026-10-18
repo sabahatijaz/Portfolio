@@ -1,5 +1,4 @@
 import React,{useState, useRef} from 'react'
-import emailjs from "@emailjs/browser";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import './Contact.css'
@@ -22,25 +21,12 @@ const Contact = () => {
     if(!formData.from_name || !formData.reply_to ||!formData.message){
       setNotDone(true)
     } else {
-      
-      //  Please use your own credentials from emailjs or i will recive your email
-      
-    emailjs
-      .sendForm(
-        "service_niilndo",
-        "template_6z5idye",
-        form.current,
-        "VOBt6Akm1LhI5CZG-"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
+      const subject = encodeURIComponent(`Portfolio contact from ${formData.from_name}`);
+      const body = encodeURIComponent(
+        `${formData.message}\n\nFrom: ${formData.from_name}\nEmail: ${formData.reply_to}`
       );
+      window.location.href = `mailto:sabahatijaz26@gmail.com?subject=${subject}&body=${body}`;
+      setDone(true);
     }
     };
     
