@@ -24,6 +24,7 @@ const projects = [
       "Backend for an assistant lawyers use for document review, legal research, drafting, and intake. Multiple LLM providers, retrieval-augmented chat over case files, multi-document analysis with live updates, and voice input and output. Includes cost tracking and load balancing across providers.",
     stack: "Python, FastAPI, MongoDB, Redis, Weaviate, Celery, LangChain, LlamaIndex, OpenAI, Anthropic, Gemini, AWS Bedrock, Docker",
     demoLink: "https://app.legalassistant.au/",
+    featured: true,
   },
   {
     imgPath: propto,
@@ -32,6 +33,7 @@ const projects = [
       "Multi-tenant API for tokenizing and trading real-world assets. Auth0 and role-based access, tenant-scoped marketplace and property APIs, KYC/KYB, S3 document upload, XRPL integrations, and scheduled compliance and ledger jobs.",
     stack: "Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, Alembic, Auth0, AWS S3, APScheduler, Docker",
     demoLink: "https://invest.tblocks.io/",
+    featured: true,
   },
   {
     imgPath: stylar,
@@ -40,6 +42,7 @@ const projects = [
       "Virtual try-on where a shopper selects a product and sees it on themselves. Built on Stable Diffusion, ControlNet, BLIP, and ChatCaptioner, with outpainting, synthetic data generation, and an SDXL model fine-tuned for shoe styles.",
     stack: "Python, Stable Diffusion, SDXL, ControlNet, Hugging Face, OpenCV",
     demoLink: "https://www.stylar.com/",
+    featured: true,
   },
   {
     imgPath: genai,
@@ -134,6 +137,7 @@ const Projects = () => {
                 stack={project.stack}
                 ghLink={project.ghLink}
                 demoLink={project.demoLink}
+                featured={project.featured}
               />
             </Col>
           ))}

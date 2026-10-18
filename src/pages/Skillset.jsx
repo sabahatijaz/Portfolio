@@ -15,12 +15,24 @@ const Skillset = () => {
         <h1 className="project-heading">
           Professional <strong className="yellow">Skillset </strong>
         </h1>
-        <p className="skill-summary">
-          Generative AI for production: OpenAI, Anthropic Claude, Google Gemini, AWS Bedrock, and Groq.
-          Retrieval-augmented generation and agents with LangChain, LlamaIndex, Phidata, Weaviate, and Pinecone.
-          Backends in Python with FastAPI, PostgreSQL, MongoDB, Redis, Celery, and Docker.
-          Also diffusion models (Stable Diffusion, SDXL, ControlNet) and classical machine learning, including time-series forecasting.
-        </p>
+        <div className="skill-groups">
+          <div className="skill-group">
+            <h2>Generative AI</h2>
+            <p>OpenAI, Anthropic Claude, Gemini, AWS Bedrock, Groq, Stable Diffusion, SDXL, ControlNet</p>
+          </div>
+          <div className="skill-group">
+            <h2>RAG and agents</h2>
+            <p>LangChain, LlamaIndex, Phidata, Weaviate, Pinecone, streaming, tool use</p>
+          </div>
+          <div className="skill-group">
+            <h2>Backend</h2>
+            <p>Python, FastAPI, PostgreSQL, MongoDB, Redis, Celery, Docker, Auth0</p>
+          </div>
+          <div className="skill-group">
+            <h2>Machine learning</h2>
+            <p>Time-series forecasting, computer vision, NLP, TensorFlow, scikit-learn</p>
+          </div>
+        </div>
 
         <Techstack />
 

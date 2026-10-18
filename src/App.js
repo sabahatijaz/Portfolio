@@ -19,6 +19,7 @@ import ScrollToTop from "./components/ScrollToTop"
 
 import "./App.css";
 import "./style.css";
+import "./polish.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
